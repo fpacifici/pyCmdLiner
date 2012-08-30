@@ -69,3 +69,19 @@ There are two ways to provide this mapping:
   is chosen through the first input argument (like for example: git commit. commit is the command). In this case
   the mapping is provided through 'commandMapping' dictionary, which states the method to be called for each command.
 
+A header string can be provided through 'appHeader' key in configuration dictionary.
+
+If the user of the tool provides an invalid command, no command at all, or an invalid number of parameters for 
+the chosen command, the usage string is printed out. This can be configured in three ways:
+
+* 'usageString' : The string rpesent in the config is printed out
+* 'usageMethod' : In this case the method specified in 'usageMethod' key is invoked and supposed to return something
+                  printable. The result is printed out.
+* 'usageFile' : if we have to print a lot of stuff, this configuraiton key can be used and the content of the file
+                is printed out.
+
+License
+-------
+This module is Copyright 2012 Filippo Pacifici and is available under the [Apache License, Version 2.0][1].
+
+[1]: http://www.apache.org/licenses/LICENSE-2.0
