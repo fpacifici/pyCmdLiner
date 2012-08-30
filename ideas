@@ -1,0 +1,16 @@
+ideas:
+
+1) Allow user to create a scaffolding without input parameters.
+1a User gives a list of allowed command and an object. The scaffolding invokes the method requested by the user
+1ab Add caption
+1b Add a default one that prints usage
+1c Pass input parameters without checks
+1d Check on input parameters -> correspond to desired inputs
+
+2) Provide way to define options as object input
+2a Map option to input parameter
+2b Map options with default value
+
+3) Provide way to define options as object attributes
+3a Map input options with object attribute
+3b Map input options with object attribute with setter methods
